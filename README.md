@@ -140,11 +140,8 @@ Depth estimation is performed **only for true positives**.
 For a detected bounding box:
 
 * Bottom-center pixel is selected:
-  [
-  u = \frac{x_{\min} + x_{\max}}{2},
-  \quad
-  v = y_{\max}
-  ]
+  <img width="1038" height="88" alt="image" src="https://github.com/user-attachments/assets/101b343f-bf52-4b7b-8b87-ebfe16e29a83" />
+
 
 This point approximates the contact point of the object with the ground.
 
@@ -168,31 +165,19 @@ This yields a 3D ray direction:
 
 Ground plane equation:
 
-[
 Y = -h
-]
 
 Substituting into the ray equation:
 
-[
-yZ = -h
-\Rightarrow
-Z = -\frac{h}{y}
-]
+<img width="1057" height="135" alt="image" src="https://github.com/user-attachments/assets/8507e40c-315a-4530-81fd-629cdcd91e38" />
 
-[
-X = xZ
-]
-
----
 
 ### 8.4 Distance Computation
 
 Planar distance on the ground:
 
-[
-d = \sqrt{X^2 + Z^2}
-]
+<img width="1148" height="80" alt="image" src="https://github.com/user-attachments/assets/c0378e73-6e87-4209-b11b-a14338c0b992" />
+
 
 This matches the definition used to compute the ground-truth distances.
 
