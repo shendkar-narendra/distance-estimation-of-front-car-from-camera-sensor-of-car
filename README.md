@@ -24,14 +24,8 @@ The task uses the dataset folder **`KITTI_Selection`**, which contains:
 * One calibration file per image (`.txt`)
 * Each file contains the **camera intrinsic matrix**:
 
-[
-K =
-\begin{bmatrix}
-f_x & 0 & c_x \
-0 & f_y & c_y \
-0 & 0 & 1
-\end{bmatrix}
-]
+<img width="233" height="116" alt="image" src="https://github.com/user-attachments/assets/78e2e99b-be3e-4567-b257-36d13ec58199" />
+
 
 # 2.3 Ground Truth Labels
 
@@ -334,14 +328,5 @@ This task demonstrates how:
 * Monocular distance estimation is possible using camera intrinsics and geometric assumptions.
 * Detection quality directly affects depth estimation accuracy.
 
-The implementation follows a mathematically consistent pipeline and satisfies all requirements stated in the task description.
 
----
 
-If you want, next I can:
-
-* shorten this to a **2-page report version**
-* adapt it to **LaTeX**
-* or tailor wording **exactly to your professor’s lecture slides**
-
-Just say.
